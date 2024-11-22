@@ -1,0 +1,51 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --bg: #d1d5db;
+    --bg-square: #f7fee7;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: var(--shadow);
+    background-color: var(--bg);
+    gap: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 500px;
+}
+
+.square {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: var(--bg-square);
+}
