@@ -14,11 +14,33 @@
 .header {
     padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 25px;
     font-weight: 900;
     box-shadow: var(--shadow);
     background-color: var(--bg);
+}
+
+.logo {
+    display: flex;
     gap: 2px;
+}
+
+.header button{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.header button:hover{
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 .container {
